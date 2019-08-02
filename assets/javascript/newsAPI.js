@@ -5,8 +5,10 @@ $('.main-search-button').on('click', function (event) {
   var query = $('.user-search-input').val().trim();
   console.log("NewsAPI query = ", query);
 
-  var queryURL = "https://newsapi.org/v2/everything?q=" + query + "&from=2019-07-19&to=2019-07-19&sortBy=popularity&apiKey=37ef007297c34129a5a467ca9a5304ab";
+  var queryURL = "https://newsapi.org/v2/everything?q=" + query + "&from=2019-07-19&to=2019-07-19&sortBy=popularity&apiKey=ff480f1e673449f0939e6be060a0be82";
   // console.log(queryURL)
+  // my api - ff480f1e673449f0939e6be060a0be82
+  // old project-11 daniel key - 37ef007297c34129a5a467ca9a5304ab
   $.ajax({
     url: queryURL,
     method: "GET"

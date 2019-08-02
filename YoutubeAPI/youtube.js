@@ -5,8 +5,10 @@ function onClientLoad() {
 }
 // Called automatically when YouTube API interface is loaded/
 function onYouTubeApiLoad() {
-  gapi.client.setApiKey('AIzaSyBEDZ-mNT4ZebCqzIan1K8VrZ2FwHgJ-e8') 
-  // gapi.client.setApiKey('AIzaSyBEDZ-mNT4ZebCqzIan1K8VrZ2FwHgJ-e8'); AIzaSyB_LacdNoyYmvySVPxZIORjEZ4hjXu13S4 
+  gapi.client.setApiKey('AIzaSyD0FZRZkmieqHqYNv125mo9kcD7NOw1-ZE') 
+  // gapi.client.setApiKey('AIzaSyBEDZ-mNT4ZebCqzIan1K8VrZ2FwHgJ-e8'); 
+  // AIzaSyB_LacdNoyYmvySVPxZIORjEZ4hjXu13S4 
+  // AIzaSyD0FZRZkmieqHqYNv125mo9kcD7NOw1-ZE
 }
 
 // Called when the search button is clicked in the html code
@@ -15,6 +17,7 @@ $('.main-search-button').on('click', function (prevent) {
   $('.user-search-input').empty();
   var query = $('.user-search-input').val().trim();
 
+  console.log("query from Youtube API is = query = ", query)
   // Use the JavaScript client library to create a search.list() API call.
   var request = gapi.client.youtube.search.list({
     part: 'snippet',
