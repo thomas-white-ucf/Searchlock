@@ -6,9 +6,8 @@ function onClientLoad() {
 // Called automatically when YouTube API interface is loaded/
 function onYouTubeApiLoad() {
   gapi.client.setApiKey('AIzaSyD0FZRZkmieqHqYNv125mo9kcD7NOw1-ZE') 
-  // gapi.client.setApiKey('AIzaSyBEDZ-mNT4ZebCqzIan1K8VrZ2FwHgJ-e8'); 
-  // AIzaSyB_LacdNoyYmvySVPxZIORjEZ4hjXu13S4 
-  // AIzaSyD0FZRZkmieqHqYNv125mo9kcD7NOw1-ZE
+  // old key -AIzaSyB_LacdNoyYmvySVPxZIORjEZ4hjXu13S4 
+  // my key - AIzaSyD0FZRZkmieqHqYNv125mo9kcD7NOw1-ZE
 }
 
 // Called when the search button is clicked in the html code

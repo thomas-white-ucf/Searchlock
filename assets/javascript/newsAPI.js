@@ -27,6 +27,7 @@ $('.main-search-button').on('click', function (event) {
         <p class="card-text">${results[i].description}</p>
         <p class="card-text">${results[i].content}</p>
         <p class="card-text">Published on: ${results[i].publishedAt}</p>
+        
         <button type="button" class="btn btn-primary btn-xs"><a href='${results[i].url}' class='read'>Read more</a></button>
         </div>
         </div>
